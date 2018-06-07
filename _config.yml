@@ -7,6 +7,7 @@
 
 # Site settings
 title: Changwoo Hacks
+author: 류창우
 email: cwryu AT debian DOT org
 description: > # this means to ignore newlines until "baseurl:"
   Hack n. : A non-obvious solution to an interesting problem
