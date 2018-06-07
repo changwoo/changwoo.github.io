@@ -4,8 +4,6 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">블로그</h1>
-
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
@@ -18,6 +16,6 @@ layout: default
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="http://feeds.feedburner.com/ChangwooHacks">RSS</a></p>
+  <p class="rss-subscribe"><a href="http://feeds.feedburner.com/ChangwooHacks">RSS</a></p>
 
 </div>
