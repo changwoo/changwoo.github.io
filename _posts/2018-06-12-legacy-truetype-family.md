@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 레가시: 트루타입 글꼴의 family 및 subfamily
+title: "레가시: 트루타입 글꼴의 family 및 subfamily"
 date:   2018-06-12 00:00:00 +0900
 tags: history truetype font legacy 역사 정보 레가시 트루타입 글꼴
 categories: hacks
