@@ -2,7 +2,7 @@
 layout: post
 title:  "오픈소스 역사: HANGUL_KEYBOARD_TYPE 환경 변수"
 date:   2018-06-08 00:00:00 +0900
-tags: history opensource l10n
+tags: history opensource l10n 역사 오픈소스 한글 의견
 categories: hacks
 ---
 

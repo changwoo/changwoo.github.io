@@ -2,7 +2,7 @@
 layout: post
 title:  오픈소스/상업용 이중 라이선스를 이용한 공포 마케팅
 date:   2017-02-16 22:20:00 +0900
-tags: article GPL dual license FUD MySQL
+tags: article GPL dual license FUD MySQL 라이선스 의견
 categories: hacks
 ---
 

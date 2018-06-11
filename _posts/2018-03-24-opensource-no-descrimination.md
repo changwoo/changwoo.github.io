@@ -2,7 +2,7 @@
 layout: post
 title:  "오픈소스 라이선스의 차별 없음"
 date:   2018-03-24 22:35:00 +0900
-tags: license
+tags: license opinion 라이선스 의견
 categories: hacks
 ---
 [페이스북 글](https://www.facebook.com/ryuchangwoo/posts/10211477728600338)에서 가져옴.
