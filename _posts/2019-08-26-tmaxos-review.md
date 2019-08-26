@@ -21,49 +21,67 @@ categories: hacks
 하면서 살펴봤지만 실체를 보면 티맥스 측에서 자체 개발했다고 발표했던 부분을
 자체 개발한 것은 꽤 사실이었다.
 
-티맥스OS에서는 GBM을 이용해 버퍼를 전달하고 EGL을 사용하는, 2D/3D 하드웨어
-가속을 하는 자체 컴포지트 디스플레이 서버를 만들었다. 정확한 방식은 알 수
-없었지만 Wayland 프로토콜을 사용하지도 않는다. 기존의 오픈소스 툴킷
-라이브러리는 여기에 호환되지 않고 자체적인 GUI 툴킷도 들어 있다. GTK에서
-Cairo를 사용하는 것처럼 2D 드로잉은 Skia 그래픽 라이브러리를 사용한다.
+티맥스OS에서는 리눅스의
+[DRM](https://en.wikipedia.org/wiki/Direct_Rendering_Manager)
+[GBM](https://www.systutorials.com/docs/linux/man/7-drm-gem/)을 이용해 버퍼를
+전달하고 Mesa를 이용해 [EGL](https://en.wikipedia.org/wiki/EGL_(API))을
+사용하는, 2D/3D 하드웨어 가속을 하는 자체 컴포지트 디스플레이 서버를 만들었다.
+정확한 방식은 알 수 없었지만
+[Wayland](https://en.wikipedia.org/wiki/Wayland_(display_server_protocol))
+프로토콜을 사용하지도 않는다. 기존의 오픈소스 툴킷 라이브러리는 여기에
+호환되지 않고 자체적인 GUI 툴킷도 들어 있다. [GTK](https://www.gtk.org/)에서
+[Cairo](https://cairographics.org/)를 사용하는 것처럼 2D 드로잉은
+[Skia](https://skia.org/) 그래픽 라이브러리를 사용한다.
 
-WINE의 껍데기 정도로 생각했던 윈도우 에뮬레이션 기능도 WINE 프로젝트의
-결과물을 여기 저기에서 사용하기는 하지만, 커널 레벨에서 PE 바이너리를
-디텍트하고 (여기까지는 binfmt 기능) 변환하는 것까지 하는 기묘한 자체적인
-방법을 사용한다.
+[WINE](https://www.winehq.org/)의 껍데기 정도로 생각했던 윈도우 에뮬레이션
+기능도 WINE 프로젝트의 결과물을 여기 저기에서 사용하기는 하지만, 커널 레벨에서
+PE 바이너리를 디텍트하고 (여기까지는 리눅스의
+[binfmt](https://en.wikipedia.org/wiki/Binfmt_misc) 기능) 변환하는 것까지 하는
+기묘한 자체적인 방법을 사용한다.
 
 tnetd라는 자체 네트워크 관리 서버가 돌아간다. 지금은 리눅스 시스템에서
-일반화되어 있는 NetworkManager는 사용하지 않는다.
+일반화되어 있는
+[NetworkManager](https://wiki.gnome.org/Projects/NetworkManager)는 사용하지
+않는다.
 
-크로미움에서 이름만 바꾼 브라우저로 생각했던 ToGate 브라우저도 위에서 말한
-자체 GUI 덕분에 GTK 프론트엔드를 빼고 자체 GUI용 라이브러리를 붙여놨다.
+[크로미움](https://www.chromium.org/)에서 이름만 바꾼 브라우저로 생각했던
+ToGate 브라우저도 위에서 말한 자체 GUI 덕분에 GTK 프론트엔드를 빼고 자체 GUI용
+라이브러리를 붙여놨다.
 
 정말 많은 노력을 기울였다는 사실은 인정해야 한다. 문제는 이렇게 실제로 노력을
 한 것들이 무슨 의미가 있는지이다. 그냥 리눅스 데스크톱 쓰는 것과 비교해서 뭐가
 더 낫길래 티맥스는 그 시간과 돈과 인력을 투입한 것일까?
 
-자체 디스플레이 서버를 만드는 일이 아주 불가능한 일은 아니다. 캐노니컬도 Mir
-디스플레이 서버를 만들었었으니까. 하지만 Mir가 망한 것처럼 하드웨어 벤더들의
-지원을 받으면서 새로운 환경의 생태계를 만들기는 쉽지 않다. 티맥스 측에서는
-"무거운 X 윈도우 시스템"을 대체한다고 어떤 언론 기사에서 밝혔지만, 이는 몇년
-전에나 할 수 있는 이야기이다. 비슷한 목표를 가지고 비슷한 기술 스택으로 구성된
-Wayland가 기본으로 탑재되는 배포판/데스크톱이 많아진 지금 이 때에 이런 문제
+자체 디스플레이 서버를 만드는 일이 아주 불가능한 일은 아니다. 우분투를 만든
+[캐노니컬](https://canonical.com/)도
+[Mir](https://en.wikipedia.org/wiki/Mir_(software)) 디스플레이 서버를
+만들었었으니까. 하지만 Mir가 망한 것처럼 하드웨어 벤더들의 지원을 받으면서
+새로운 환경의 생태계를 만들기는 쉽지 않다. 티맥스 측에서는 "무거운 X 윈도우
+시스템"을 대체한다고 어떤 언론 기사에서 밝혔지만, 이는 몇년 전에나 할 수 있는
+이야기이다. 비슷한 목표를 가지고 비슷한 기술 스택으로 구성된 Wayland가
+기본으로 탑재되는 배포판/데스크톱이 많아진
+([Fedora](https://fedoramagazine.org/fedora-25-released/) 및
+[Debian](https://www.debian.org/News/2019/20190706)) 지금 이 때에 이런 문제
 제기는 유효하지 않다.
 
 가상머신에서 똑같이 2D 가속을 위해 DRM 드라이버를 설치한 상태에서 아무리 봐도
-GNOME/Wayland 환경보다 빠르거나 가볍다고 느껴지지 않았고, 파이어폭스와 그놈
-터미널을 띄운 GNOME/Wayland 세션과 ToGate와 터미널을 띄운 티맥스OS 세션을
-비교해 보면 티맥스OS 쪽이 1.4배나 더 많은 메모리를 사용했다. (ToGate는
-크로미움이니까 파이어폭스보다 메모리를 차지하는 거야 어쩔 수 없다고 쳐도
-software_center 프로세스가 브라우저만큼 많은 메모리를 차지하는 건 이상했다.)
-X11 호환성으로 Xvfb를 이용하고 있는데, 내가 아는 Xvfb라면 여기서 실행한 X 호환
-프로그램은 Wayland의 Xwayland와는 다르게 하드웨어 가속 효과도 받지도 못한다.
-소프트웨어 개발 측면에서 훌륭한 구조를 보여주는 것도 아니다. (지난 5월 유출된
-티맥스OS 헤더 파일을 보고 GUI API가 저급하다고 평가한 트위터 글이 있었는데,
-그것을 의식했는지 이번에는 개발용 헤더 파일도 깔끔하게 지워놨다.)
+[GNOME+Wayland](https://wiki.gnome.org/Initiatives/Wayland) 환경보다 빠르거나
+가볍다고 느껴지지 않았고, 파이어폭스와 그놈 터미널을 띄운 GNOME/Wayland 세션과
+ToGate와 터미널을 띄운 티맥스OS 세션을 비교해 보면 티맥스OS 쪽이 1.4배나 더
+많은 메모리를 사용했다. (ToGate는 크로미움이니까 파이어폭스보다 메모리를
+차지하는 거야 어쩔 수 없다고 쳐도 software_center 프로세스가 브라우저만큼 많은
+메모리를 차지하는 건 이상했다.) X11 호환성으로
+[Xvfb](https://www.x.org/releases/X11R7.6/doc/man/man1/Xvfb.1.xhtml)를
+이용하고 있는데, 내가 아는 Xvfb라면 여기서 실행한 X 호환 프로그램은 Wayland의
+[Xwayland](https://wayland.freedesktop.org/docs/html/ch05.html)와는 다르게
+하드웨어 가속 효과도 받지도 못한다. 소프트웨어 개발 측면에서 훌륭한 구조를
+보여주는 것도 아니다. (지난 5월 유출된 티맥스OS 헤더 파일을 보고 GUI API가
+저급하다고 평가한 트위터 글이 있었는데, 그것을 의식했는지 이번에는 개발용 헤더
+파일도 깔끔하게 지워놨다.)
 
 리눅스 WINE보다 잘 돌아가는 윈도우 프로그램은 카카오톡을 비롯한 테스트한 몇 개
-밖에 없는 것 같다. 파일 구조는 XDG 표준(XDG Base Directory Specification)을
+밖에 없는 것 같다. 파일 구조는 [XDG Base Directory
+Specification](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html)을
 따르는 프로그램 덕분에 ```~/.local``` 폴더도 들어 있었고, 일부 티맥스 앱은 XDG
 표준의 ```~/.config``` 폴더에 설정을 저장하기도 하지만, 윈도우 이름을
 무비판적으로 따라한 티가 나는 자체적인 ```~/AppData```, ```~/Favorite```,
