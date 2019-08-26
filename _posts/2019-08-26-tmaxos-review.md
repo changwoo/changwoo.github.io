@@ -24,9 +24,10 @@ categories: hacks
 티맥스OS에서는 리눅스의
 [DRM](https://en.wikipedia.org/wiki/Direct_Rendering_Manager)
 [GBM](https://www.systutorials.com/docs/linux/man/7-drm-gem/)을 이용해 버퍼를
-전달하고 Mesa를 이용해 [EGL](https://en.wikipedia.org/wiki/EGL_(API))을
-사용하는, 2D/3D 하드웨어 가속을 하는 자체 컴포지트 디스플레이 서버를 만들었다.
-정확한 방식은 알 수 없었지만
+전달하고 [Mesa](https://www.mesa3d.org/)를 통해
+[EGL](https://en.wikipedia.org/wiki/EGL_(API))을 사용하는, 2D/3D 하드웨어
+가속을 하는 자체 컴포지트 디스플레이 서버를 만들었다. 정확한 방식은 알 수
+없었지만
 [Wayland](https://en.wikipedia.org/wiki/Wayland_(display_server_protocol))
 프로토콜을 사용하지도 않는다. 기존의 오픈소스 툴킷 라이브러리는 여기에
 호환되지 않고 자체적인 GUI 툴킷도 들어 있다. [GTK](https://www.gtk.org/)에서
