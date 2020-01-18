@@ -19,6 +19,12 @@ url: "https://changwoo.xyz" # the base hostname & protocol for your site
 tag_page_layout: tag_page
 tag_page_dir: tag
 
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-hacker
