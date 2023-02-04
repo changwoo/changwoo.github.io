@@ -37,7 +37,7 @@ paginate_path: "/page:num/"
 # Set this to a github repository to be used to host comments.
 github_comments_repository:  changwoo/blog-comments
 
-google_analytics: UA-120663225-1
+google_analytics: G-QDNJWJK9HP
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
