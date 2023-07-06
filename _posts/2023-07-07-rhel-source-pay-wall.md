@@ -31,7 +31,6 @@ categories: hacks
 레드햇에서 RHEL 개발을 총괄하는 코어 플랫폼 부사장 마이크 맥그레이쓰는
 [2023년 6월 21일 블로그](https://www.redhat.com/en/blog/furthering-evolution-centos-stream)에서, 
 앞으로 RHEL의 git 저장소를 RHEL 고객 계정으로 로그인해야만 접속할 수 있게 변경한다고 발표했다.
-
 이 발표 내용을 보고 많은 사람들은 레드햇이 "오픈소스를 그만둔다"고 호들갑을
 떨면서 반응하기도 했지만, 이는 사실이라고 볼 수 없다.
 
@@ -48,7 +47,7 @@ categories: hacks
 > than a reasonable reproduction cost, preferably downloading via the Internet
 > without charge."
 >
-> "어떤 제품이 소스 코드 형태로 배포되지 않을 경우, 함리적인 복제 비용 이하로
+> "어떤 제품이 소스 코드 형태로 배포되지 않을 경우, 합리적인 복제 비용 이하로
 > 소스 코드를 얻을 수 있는 잘 알려진 방법이 있어야 합니다. 인터넷을 통해 비용
 > 없이 다운로드하는 방법이 좋습니다."
 
@@ -61,7 +60,6 @@ categories: hacks
 
 그 소스 코드에 대한 배포를 제한할 수는 없다. 전달받은 소스 코드를 제3자에게
 배포하는 것도 막을 수는 없다는 뜻이다.
-
 
 ## 레드햇의 조치가 별 문제가 없는 이유
 
@@ -175,6 +173,13 @@ categories: hacks
 가져가고 있는 안정적인 회사로, 망할 가능성이나 수익성 때문에 레드햇의
 아이덴티티인 배포판 사업을 포기할 가능성은 없다고 봐도 된다. 아니면 모회사
 IBM에서 압박이 왔던 것일까?
+
+이번 뉴스 이후 합성 이미지 (원문은 [마하트마 간디의 "THEN YOU WIN"을 IBM 인수
+직후 "THEN THEY BUY YOU"라고 덧붙인
+이미지](https://www.reddit.com/r/linuxmasterrace/comments/9skt93/who_did_this_red_hat_office/)):
+
+![Then Switch To Debian](/assets/img/2020-07/2020-07-07-redhat_office_then_switch_debian.jpg)
+
 
 ## 앞으로는 & 생각
 
