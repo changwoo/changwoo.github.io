@@ -212,9 +212,8 @@ IBM이 이렇게까지 흑화하지는 않을 것으로 보인다.
 ## 여담
 
 이번 뉴스 이후 합성 이미지 (레드햇 HQ 로비에 있는 마하트마 간디의 문구인데,
-원래 이미지는 5년 전 IBM의 인수 직후 [원문의 "THEN YOU WIN"을 "THEN THEY BUY
-YOU"라고 덧붙인 이미지]
-(https://www.reddit.com/r/linuxmasterrace/comments/9skt93/who_did_this_red_hat_office/)다):
+원래 이미지는 5년 전 IBM의 인수 직후 
+[원문의 "THEN YOU WIN"을 "THEN THEY BUY YOU"라고 덧붙인 이미지](https://www.reddit.com/r/linuxmasterrace/comments/9skt93/who_did_this_red_hat_office/)다):
 
 ![Then Switch To Debian](/assets/img/2020-07/2020-07-07-redhat_office_then_switch_debian.jpg)
 
