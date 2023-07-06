@@ -14,7 +14,6 @@ categories: hacks
 버전 9 사용자는 아마도 이 버전의 지원이 끝날 때까지 계속 사용할 수 있을
 것이다. 하지만 이러한 방향이 계속된다면 버전 10 이후는 어떻게 될지 알 수 없다.
 
-
 ## 복기: CentOS 종료
 
 [2020년 12월 글(해설: CentOS 종료)](https://changwoo.xyz/hacks/2020/12/09/end-of-centos.html)에서
@@ -174,13 +173,6 @@ categories: hacks
 아이덴티티인 배포판 사업을 포기할 가능성은 없다고 봐도 된다. 아니면 모회사
 IBM에서 압박이 왔던 것일까?
 
-이번 뉴스 이후 합성 이미지 (원문은 [마하트마 간디의 "THEN YOU WIN"을 IBM 인수
-직후 "THEN THEY BUY YOU"라고 덧붙인
-이미지](https://www.reddit.com/r/linuxmasterrace/comments/9skt93/who_did_this_red_hat_office/)):
-
-![Then Switch To Debian](/assets/img/2020-07/2020-07-07-redhat_office_then_switch_debian.jpg)
-
-
 ## 앞으로는 & 생각
 
 실제 RHEL 파생 배포판의 사용에는 별 문제가 없을 것으로 보인다. 하지만 이런
@@ -216,3 +208,13 @@ IBM이 이렇게까지 흑화하지는 않을 것으로 보인다.
 방해한다고 한다고 해서 회사가 이득을 볼 수 있는 부분은, 적어도 리눅스 배포판에
 대해서는 거의 없다고 생각한다. 이렇게 해서 달라지는 건 지금까지 레드햇
 본인들이 30년간 쌓아 온 생태계가 파괴되는 것 뿐이다.
+
+## 여담
+
+이번 뉴스 이후 합성 이미지 (레드햇 HQ 로비에 있는 마하트마 간디의 문구인데,
+원래 이미지는 5년 전 IBM의 인수 직후 [원문의 "THEN YOU WIN"을 "THEN THEY BUY
+YOU"라고 덧붙인 이미지]
+(https://www.reddit.com/r/linuxmasterrace/comments/9skt93/who_did_this_red_hat_office/)다):
+
+![Then Switch To Debian](/assets/img/2020-07/2020-07-07-redhat_office_then_switch_debian.jpg)
+
