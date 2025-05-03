@@ -2,7 +2,7 @@
 layout: post
 title:  "MariaDB 오픈소스 라이선스와 제품에서의 사용 가능 여부"
 date:   2025-05-03 00:00:00 +0900
-tags: mariadb mysql oracle license
+tags: mariadb mysql oracle opensource license
 categories: hacks
 ---
 
