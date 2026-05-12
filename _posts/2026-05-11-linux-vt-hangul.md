@@ -23,10 +23,9 @@ DEC의 [VT100](https://en.wikipedia.org/wiki/VT100)이나
 에뮬레이터 세팅에서도 자주 보는 이름일 것이다.
 
 ![VT100](https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/DEC_VT100_terminal.jpg/330px-DEC_VT100_terminal.jpg)
-( Wikipedia Commons, CC BY 2.0 )
-
 ![VT220](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/DEC_VT220_terminal.jpg/330px-DEC_VT220_terminal.jpg)
-( Wikipedia Commons, CC BY 2.0 )
+
+( VT100 및 VT200 - Wikipedia, CC BY 2.0 )
 
 
 ```
